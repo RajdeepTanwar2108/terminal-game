@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+
+h1 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
+
+#container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+#pixi-container {
+    /* Replace flex: 1 with fixed dimensions or aspect ratio */
+    aspect-ratio: 12/8;
+    /* OR */
+  background-color: #f0f0f0;
+  overflow: hidden;
+  flex: 1;
+}
+
+#terminal-container {
+    width: 33%;
+    background-color: black;
+}
