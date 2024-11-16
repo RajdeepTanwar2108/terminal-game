@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
+
+#container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+#pixi-container {
+    background-color: #000000;
+    overflow: hidden;
+    flex: 1;
+    aspect-ratio: 3 / 2; /* Maintain a 12:8 (3:2) aspect ratio */
+    width: 100%;
+    height: 100%;
+}
+
+#terminal-container {
+    width: 33%;
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Media Queries for Dynamic Asset Loading */
+@media (max-width: 768px) {
+    #pixi-container {
+        /* Adjust styles for smaller screens */
+        background-color: #000000; /* Example of changing background */
+    }
+}
+
+textarea.xterm-helper-textarea {
+    opacity: 0;
+}
+
+.xterm-viewport {
+    height: 0px; /* Set desired height */
+    width: auto;  /* Set desired width */
+    position: relative;
+  }
